@@ -20,7 +20,7 @@ $lang = 'english';
 
 $logo = "./logo.png";
 
-$enable_chat = false; /* not yet implemented */
+$enable_chat = false;
 $enable_stats = true;
 $enable_downloads = true;
 $enable_serverlist = true;
@@ -43,6 +43,12 @@ $stats_playerstatus_timespan = 15;
 /* Chat configuration */
 $deleteOldComments = true;
 $deleteOldCommentsAfter = '-24 hours';
+
+/* Chat administration */
+$chat_admin_tokens = [
+    'change-me'
+];
+$chat_history_limit = 200;
 
 /* Debugging */
 $show_errors = true;
