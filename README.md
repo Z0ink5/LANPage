@@ -13,6 +13,7 @@ It should be possible to personalize the page for each event. In addition to the
 * Offer downloads for the participants
 * Show a server list (offline/online)
 * Various statistic features via the LAN Launcher
+* Lightweight chat with basic moderation tools
 
 ## Things required:
 * Webserver and PHP7 or newer
@@ -26,6 +27,12 @@ It should be possible to personalize the page for each event. In addition to the
 - chmod 0755 db/*.db
 - See the *.sample.xml files and modify them to match your needs
 - See https://www.eti-lan.xyz/#customize for more information about integration and the launcher.ini and launcher.css files
+
+## Chat
+
+Set `$enable_chat = true;` in your `config.php` to activate the built-in chat. The chat stores its data in `db/chat.db` and does
+not require any additional services. Each visitor can pick a display name and color. Define one or more shared admin tokens via
+`$chat_admin_tokens` to allow trusted moderators to delete messages or place timeouts/bans through the web interface.
 
 ## Screenshots:
 
